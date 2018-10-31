@@ -83,6 +83,8 @@ Use the following details:
 - Click "Manage Display" on the tab menu
 - Change the "Format" to "Swagger UI" for "Specification" field
 - Save
+- Click on the small gear icon next to the "Specification" field
+- Select the HTTP methods that you want "Try it out" functionality to be enabled
 
 - Manage -> Content
 - Add Content
