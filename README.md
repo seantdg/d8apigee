@@ -80,6 +80,9 @@ Use the following details:
 - Save field settings
 - Allow file extensions: yaml,yml,json
 - Save settings
+- Click "Manage Display" on the tab menu
+- Change the "Format" to "Swagger UI" for "Specification" field
+- Save
 
 - Manage -> Content
 - Add Content
