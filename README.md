@@ -85,6 +85,7 @@ Use the following details:
 - Save
 - Click on the small gear icon next to the "Specification" field
 - Select the HTTP methods that you want "Try it out" functionality to be enabled
+- Save
 
 - Manage -> Content
 - Add Content
