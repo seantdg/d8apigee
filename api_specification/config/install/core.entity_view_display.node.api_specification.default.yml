@@ -1,0 +1,49 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.api_specification.body
+    - field.field.node.api_specification.field_specification
+    - node.type.api_specification
+  module:
+    - swagger_ui_formatter
+    - text
+    - user
+id: node.api_specification.default
+targetEntityType: node
+bundle: api_specification
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_specification:
+    weight: 102
+    label: above
+    settings:
+      validator: default
+      validator_url: ''
+      doc_expansion: list
+      supported_submit_methods:
+        get: get
+        put: put
+        post: post
+        delete: delete
+        options: '0'
+        head: '0'
+        patch: '0'
+      show_top_bar: false
+      sort_tags_by_name: false
+    third_party_settings: {  }
+    type: swagger_ui
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

@@ -8,9 +8,7 @@ docker exec -i some-drupal ./vendor/drush/drush/drush site-install --db-url=mysq
 
 docker exec -i some-drupal chmod -R 777 themes
 docker exec -i some-drupal chmod -R 777 sites
-docker exec -i some-drupal ./vendor/drush/drush/drush cr
-docker exec -i some-drupal ./vendor/drush/drush/drush en -y apigee_edge swagger_ui_formatter apigee_edge_apiproduct_rbac
+docker exec -i some-drupal ./vendor/drush/drush/drush en -y apigee_edge swagger_ui_formatter apigee_edge_apiproduct_rbac features features_ui api_specification
 docker exec -i some-drupal ./vendor/drush/drush/drush key:save apigee_edge_connection --key-type=apigee_auth --key-provider=apigee_edge_environment_variables
 docker exec -i some-drupal ./vendor/drush/drush/drush apigee-edge:sync
-
-
+docker exec -i some-drupal ./vendor/drush/drush/drush cr

@@ -1,0 +1,13 @@
+name: 'API Specification'
+description: 'Provides API Specification content type and related configuration. '
+type: module
+core: 8.x
+dependencies:
+  - field
+  - file
+  - menu_ui
+  - node
+  - path
+  - swagger_ui_formatter
+  - text
+  - user
