@@ -4,6 +4,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.api_specification.body
+    - field.field.node.api_specification.field_specification
     - node.type.api_specification
   module:
     - text
@@ -26,4 +27,5 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-hidden: {  }
+hidden:
+  field_specification: true
