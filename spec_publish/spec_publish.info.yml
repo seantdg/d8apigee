@@ -1,0 +1,5 @@
+name: Spec Publish
+type: module
+description: Publish API Specifications
+package: Custom
+core: 8.x

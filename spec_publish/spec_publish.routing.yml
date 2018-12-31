@@ -1,0 +1,6 @@
+spec_publish:
+  path: /spec_publish
+  defaults:
+    _controller: Drupal\spec_publish\Controller\SpecPublishController:publish
+  requirements:
+    _permission: 'access content'

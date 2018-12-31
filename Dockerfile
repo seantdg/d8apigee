@@ -12,10 +12,11 @@ RUN ./composer.phar require cweagans/composer-patches
 RUN ./composer.phar require drupal/apigee_edge
 RUN ./composer.phar require drupal/swagger_ui_formatter
 RUN ./composer.phar require drush/drush
-RUN ./composer.phar require drupal/migrate_source_csv
 RUN ./composer.phar require drupal/features
 
 RUN mkdir libraries && curl -sSL https://github.com/swagger-api/swagger-ui/archive/v3.19.4.tar.gz -o swagger.tar.gz && tar -xvzf swagger.tar.gz && rm swagger.tar.gz  && mv swagger-ui-3.19.4 libraries/swagger_ui
 
 RUN yes | ./vendor/drush/drush/drush init
-ADD ./api_specification ./sites/all/modules/custom/features/api_specification
+ADD ./api_specification ./modules/custom/features/api_specification
+ADD ./spec_publish ./modules/spec_publish
+ADD ./swagger.json ./private/assets/swagger.json
