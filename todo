@@ -1,0 +1,13 @@
+THEMING
+
+drush config-get bartik.settings
+drush config-get color.theme.bartik
+drush config-set
+
+
+block.block.bartik_branding
+
+--- 
+
+- enable registration
+- api API menu
